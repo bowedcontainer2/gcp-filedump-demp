@@ -10,6 +10,8 @@ from flask import Flask, jsonify, abort, make_response, request
 
 app = Flask(__name__)
 
+port = int(os.environ.get('PORT', 5000))
+
 
 tasks = [
     {
@@ -86,4 +88,4 @@ def delete_task(task_id):
     return jsonify({'result': True})
 
 if __name__ == '__main__':
-    app.run(debug=True, host="0.0.0.0")
+    app.run(debug=True)
