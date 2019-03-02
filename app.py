@@ -1,11 +1,11 @@
 
 from flask import Flask, jsonify, abort, make_response, request
-from uber_rides.session import Session
-from uber_rides.client import UberRidesClient
+# from uber_rides.session import Session
+# from uber_rides.client import UberRidesClient
 
 
-session = Session(server_token=<TOKEN>)
-client = UberRidesClient(session)
+# session = Session(server_token=<TOKEN>)
+# client = UberRidesClient(session)
 
 
 app = Flask(__name__)
